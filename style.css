@@ -264,6 +264,15 @@ footer .container > div {
   }
 }
 
+@media (max-width: 700px) {
+  .map {
+    background: url(images/map_jp.png) no-repeat center;
+    height: 300px;
+    background-size: contain;
+    width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .tochigiContainer h1 {
     font-size: 25px;
@@ -286,7 +295,7 @@ footer .container > div {
     background: url("images/map_jp.png") no-repeat center;
     height: 300px;
     background-size: contain;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -301,7 +310,7 @@ footer .container > div {
     background: url(images/map_jp.png) no-repeat center;
     height: 220px;
     background-size: contain;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -326,8 +335,9 @@ footer .container > div {
 
   .paragraph {
     border: 1px solid #000;
-    padding: 15px;
-    width: 58%;
+    /* padding: 14px; */
+    padding: 5px 20px;
+    width: 65%;
     margin: 0 auto;
   }
 
@@ -341,56 +351,81 @@ footer .container > div {
   }
 }
 
-@media (max-width: 300px){
+@media (max-width: 400px) {
+  .paragraph {
+    border: 1px solid #000;
+    /* padding: 14px; */
+    padding: 5px 20px;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 300px) {
   .tochigiContainer h1 {
     font-size: 15px;
     margin-top: 10px;
+  }
+
+  .map {
+    background: url(images/map_jp.png) no-repeat center;
+    height: 145px;
+    background-size: contain;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .paragraph li {
+    font-size: 8px;
+    padding: 0px;
+  }
+
+  .paragraph {
+    border: 1px solid #000;
+    padding: 12px;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .tochigiImageList P {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .tochigiImagerow {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .tochigiImagerow > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tochigiImagerow label {
+    font-size: 11px;
+  }
 }
 
-.map {
-  background: url(images/map_jp.png) no-repeat center;
-  height: 145px;
-  background-size: contain;
-  width: 100%;
-  margin: 0 auto;
-}
+@media (max-width: 350px) {
+  .map {
+    background: url(images/map_jp.png) no-repeat center;
+    height: 170px;
+    background-size: contain;
+    width: 100%;
+    margin: 0 auto;
+  }
 
-.paragraph li {
-  font-size: 8px;
-  padding: 0px;
-}
-
-.paragraph {
-  border: 1px solid #000;
-  padding: 12px;
-  width: 75%;
-  margin: 0 auto;
-}
-
-.tochigiImageList P {
-  margin: 5px;
-  font-size: 12px;
-}
-
-
-.tochigiImagerow {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.tochigiImagerow > div {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-
-.tochigiImagerow label {
-  font-size: 11px;
-}
-
+  .paragraph {
+    border: 1px solid #000;
+    /* padding: 14px; */
+    padding: 1px 15px;
+    width: 83%;
+    margin: 0 auto;
+  }
 }
