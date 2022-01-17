@@ -1,0 +1,243 @@
+/* General CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+#wrapper {
+  max-width: 1980px;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: green; */
+}
+
+/* Navigation CSS */
+
+.nav-container {
+  background: #f1f1f1;
+}
+
+.nav-container .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.nav-container h3 {
+  font-size: 30px;
+}
+
+ul.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+li.nav-item a {
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  font-family: arial;
+  font-size: 18px;
+}
+
+li.nav-item {
+  padding-left: 40px;
+}
+
+li.nav-item a:hover {
+  color: #39b54a;
+  border-bottom: 2px solid #39b54a;
+  padding-bottom: 5px;
+}
+
+/* Home Banner CSS */
+
+.home-banner-container {
+  width: 100%;
+  height: 500px;
+  /* background: url('images/home-bg.jpg') no-repeat center center;
+    background-size: cover; */
+  background-color: skyblue;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.home-banner-container .container {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.home-banner-intro {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #111;
+}
+
+.home-banner-intro h2 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.logo {
+  width: 40%;
+  background-color: skyblue;
+  display: inline-block;
+  position: relative;
+  top: 40px;
+}
+
+/* Home Body Style */
+
+.home-body-container {
+  padding-bottom: 40px;
+}
+
+.home-body-container .container {
+  padding-top: 40px;
+}
+
+.home-body-first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-body-first div {
+  width: 45%;
+}
+
+.home-body-first div img {
+  width: 45%;
+  background: red;
+  display: block;
+  margin: 0 auto;
+}
+
+.home-body-first div a {
+  text-decoration: none;
+}
+
+.home-body-first div p,
+.home-body-second p {
+  text-align: center;
+  padding: 10px;
+  font-size: 27px;
+  color: red;
+}
+
+.home-body-second {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home-body-second p {
+  text-align: center;
+  padding: 40px 0px !important;
+}
+
+.home-body-second div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.home-body-second div img {
+  width: 10%;
+}
+
+/* Footer CSS */
+
+footer {
+  background: #f6ff00;
+  width: 100%;
+  padding: 40px;
+}
+
+footer .container > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-div {
+  width: 30%;
+  padding: 80px 40px;
+  background: #999;
+  border-radius: 7px;
+}
+
+.footer-div p {
+  font-size: 27px;
+  text-align: center;
+}
+
+/* tochigi guide CSS */
+
+.tochigiContainer h1 {
+  /* background-color: green; */
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.map {
+  background: url("images/map_jp.png") no-repeat center;
+  height: 500px;
+  background-size: contain;
+  width: 100%;
+}
+.paragraph {
+  /* background-color: blue; */
+  border: 1px solid #000;
+  padding: 20px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.paragraph li {
+  font-size: 15px;
+  padding: 3px;
+}
+
+.tochigiImageList P{
+    margin: 5px;
+}
+
+.tochigiImagerow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.tochigiImagerow > div {
+  width: 24%;
+}
+
+.tochigiImagerow img {
+  width: 100%;
+  height: 100%;
+}
