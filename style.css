@@ -62,9 +62,9 @@ li.nav-item {
 }
 
 li.nav-item a:hover {
-  color: #39b54a;
+  /* color: #39b54a;
   border-bottom: 1px solid #39b54a;
-  padding-bottom: 5px;
+  padding-bottom: 5px; */
 }
 
 .active {
@@ -221,8 +221,16 @@ footer .container > div {
   /* background-color: blue; */
   border: 2px solid #000;
   padding: 20px;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
+}
+
+.paragraph .dot {
+  font-size: 20px;
+  font-weight: bold;
+}
+ul.paragraph li {
+  /* list-style: none; */
 }
 
 .paragraph li {
@@ -291,14 +299,14 @@ footer .container > div {
 }
 
 .japanImage > div {
-  width: 35%;
+  width: 30%;
   border: 1px solid;
-  height: 400px;
+  height: 380px;
   margin: 12px 0px;
 }
 
 .japanImage img {
-  height: 400px;
+  height: 377px;
 }
 
 @media (max-width: 1000px) {
@@ -344,6 +352,19 @@ footer .container > div {
     display: inline-block;
     position: relative;
     top: 15px;
+  }
+
+  .paragraph {
+    /* background-color: blue; */
+    border: 2px solid #000;
+    padding: 20px;
+    width: 55%;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  .paragraph .dot {
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 
@@ -402,9 +423,22 @@ footer .container > div {
     width: 100%;
   }
 
-  .paragraph li {
+  /* .paragraph li {
     font-size: 13px;
     padding: 2px;
+  } */
+
+  .paragraph {
+    /* background-color: blue; */
+    border: 2px solid #000;
+    padding: 20px;
+    width: 55%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .paragraph .dot {
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .japanContainer h4 {
@@ -430,14 +464,14 @@ footer .container > div {
   }
 
   .japanImage > div {
-    width: 35%;
+    width: 30%;
     border: 1px solid;
-    height: 350px;
+    height: 280px;
     margin: 12px 0px;
   }
 
   .japanImage img {
-    height: 350px;
+    height: 275px;
   }
 
   .home-intro {
@@ -561,12 +595,12 @@ footer .container > div {
   .japanImage > div {
     width: 70%;
     border: 1px solid;
-    height: 400px;
+    height: 380px;
     margin: 12px auto;
   }
 
   .japanImage img {
-    height: 396px;
+    height: 377px;
   }
 }
 
@@ -680,17 +714,28 @@ footer .container > div {
     margin-bottom: 32px;
   }
 
-  .paragraph li {
+  /* .paragraph li {
     font-size: 10px;
-    /* padding: 3px; */
   }
 
   .paragraph {
     border: 1px solid #000;
-    /* padding: 14px; */
     padding: 5px 20px;
     width: 65%;
     margin: 0 auto;
+  } */
+
+  .paragraph {
+    /* background-color: blue; */
+    border: 2px solid #000;
+    padding: 10px;
+    width: 68%;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .paragraph .dot {
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .tochigiImageList P {
@@ -705,12 +750,12 @@ footer .container > div {
   .japanImage > div {
     width: 65%;
     border: 1px solid;
-    height: 380px;
+    height: 300px;
     margin: 12px auto;
   }
 
   .japanImage img {
-    height: 375px;
+    height: 296px;
   }
 
   .japanContainer p {
@@ -738,12 +783,25 @@ footer .container > div {
 }
 
 @media (max-width: 400px) {
-  .paragraph {
+  /* .paragraph {
     border: 1px solid #000;
-    /* padding: 14px; */
     padding: 5px 20px;
     width: 75%;
     margin: 0 auto;
+    font-size: 10px;
+  } */
+
+  .paragraph {
+    /* background-color: blue; */
+    border: 2px solid #000;
+    padding: 20px;
+    width: 55%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  .paragraph .dot {
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .japanContainer p {
