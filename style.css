@@ -381,8 +381,9 @@ ul.paragraph li {
     /* background-color: blue; */
     border: 1px solid #000;
     padding: 20px;
-    width: 50%;
+    width: 55%;
     margin: 0 auto;
+    font-size: 18px;
   }
 
   .home-intro {
