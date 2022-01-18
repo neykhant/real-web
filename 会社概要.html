@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <title>会社概要</title>
 </head>
 
@@ -18,11 +20,24 @@
                 <h3>LOGO</h3>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="メインページ.html">メインページ</a></li>
-                    <li class="nav-item active"><a href="会社概要.html">会社概要</a></li>
+                    <li class="nav-item activeD"><a href="会社概要.html">会社概要</a></li>
                     <li class="nav-item "><a href="tochigi guide.html">Tochigi guide</a></li>
                     <li class="nav-item"><a href="">お問い合わせ</a></li>
                 </ul>
             </div>
+        </div>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <div id="myLinks">
+                <a href="メインページ.html">メインページ</a>
+                <a href="会社概要.html">会社概要</a>
+                <a href="tochigi guide.html">tochigi guide</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
         <div class="japanContainer">
@@ -64,6 +79,17 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
