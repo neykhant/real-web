@@ -1,15 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <title>お問い合わせ</title>
 </head>
+
 <body>
     <section id="#wrapper">
-        
+        <!-- Navbar -->
+        <div class="nav-container">
+            <div class="container">
+                <h3>LOGO</h3>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="メインページ.html">メインページ</a>
+                    </li>
+                    <li class="nav-item"><a href="会社概要.html">会社概要</a></li>
+                    <li class="nav-item">
+                        <a href="tochigi guide.html">Tochigi guide</a>
+                    </li>
+                    <li class="nav-item activeD"><a href="お問い合わせ.html">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="メインページ.html" class="active">Logo</a>
+            <div id="myLinks">
+                <a href="メインページ.html">メインページ</a>
+                <a href="会社概要.html">会社概要</a>
+                <a href="tochigi guide.html">tochigi guide</a>
+                <a href="お問い合わせ.html">お問い合わせ</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="contactContainer">
+            <div class="container">
+                <div class="contactList">
+                    <div>
+                        <h3>Contact Form</h3>
+
+                        <div class="containerForm">
+                            <form action="/action_page.php">
+                                <label for="name">Your Name (Required)</label>
+                                <input type="text" id="name" name="name" placeholder="Your name.." />
+
+                                <label for="company_name">Company Name (Required)</label>
+                                <input type="text" id="company_name" name="company_name" placeholder="Company name.." />
+
+                                <label for="email">Your Email (Required)</label>
+                                <input type="email" id="email" name="email" placeholder="Your email.." />
+
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Your subject.." />
+
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" placeholder="Write something.."
+                                    style="height: 100px"></textarea>
+
+                                <input type="submit" value="Contact" />
+                            </form>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/jp_log1.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
 </body>
+
 </html>

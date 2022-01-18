@@ -216,7 +216,7 @@ footer .container > div {
   width: 100%;
 }
 .paragraph {
-  /* background-color: blue; */ 
+  /* background-color: blue; */
   border: 2px solid #000;
   padding: 20px;
   width: 45%;
@@ -346,8 +346,80 @@ ul.paragraph li {
   color: white;
 }
 
+/* Contact CSS */
 
-@media (max-width: 1200px){
+input[type="text"],
+email,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.containerForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contactContainer {
+  display: flex;
+}
+
+.contactList > div {
+  width: 30%;
+  /* background-color: red; */
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.contactList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.contactContainer .contactList img{
+  margin-top: 30px;
+  border: 1px solid #000;
+}
+
+.contactContainer h3 {
+  margin: 10px;
+}
+
+@media (max-width: 1200px) {
   .paragraph {
     /* background-color: blue; */
     border: 1px solid #000;
@@ -377,11 +449,12 @@ ul.paragraph li {
   }
 }
 
-@media (min-width: 920px){
-  .topnav{
+@media (min-width: 920px) {
+  .topnav {
     display: none;
   }
 }
+
 @media (max-width: 920px) {
   .nav-container {
     display: none;
@@ -477,6 +550,18 @@ ul.paragraph li {
     position: relative;
     top: 12px;
   }
+
+  .contactContainer .contactList img {
+    margin-top: 36px;
+    border: 1px solid #000;
+}
+
+  .contactList > div {
+    width: 40%;
+    /* background-color: red; */
+    margin-top: 20px;
+    margin: 0 auto;
+}
 }
 
 @media (max-width: 700px) {
@@ -666,6 +751,18 @@ ul.paragraph li {
   .japanImage img {
     height: 377px;
   }
+
+  .contactContainer .contactList img {
+    margin-top: 40px;
+    border: 1px solid #000;
+}
+
+  .contactList > div {
+    width: 47%;
+    /* background-color: red; */
+    margin-top: 20px;
+    margin: 0 auto;
+}
 }
 
 @media (max-width: 500px) {
@@ -844,6 +941,21 @@ ul.paragraph li {
     /* background-color: slategrey; */
     font-size: 17px;
   }
+
+  .contactList {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contactList > div {
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
 }
 
 @media (max-width: 400px) {
