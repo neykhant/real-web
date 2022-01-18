@@ -69,7 +69,7 @@ li.nav-item a:hover {
 
 /* Home Banner CSS */
 
-.home-banner-container {
+.home-container {
   width: 100%;
   height: 500px;
   /* background: url('images/home-bg.jpg') no-repeat center center;
@@ -79,7 +79,7 @@ li.nav-item a:hover {
   padding-bottom: 40px;
 }
 
-.home-banner-container .container {
+.home-container .container {
   padding-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -87,7 +87,7 @@ li.nav-item a:hover {
   justify-content: flex-end;
 }
 
-.home-banner-intro {
+.home-intro {
   width: 100%;
   height: 300px;
   display: flex;
@@ -96,8 +96,8 @@ li.nav-item a:hover {
   border: 1px solid #111;
 }
 
-.home-banner-intro h2 {
-  font-size: 40px;
+.home-intro h2 {
+  font-size: 35px;
   text-align: center;
   padding-top: 20px;
 }
@@ -112,59 +112,59 @@ li.nav-item a:hover {
 
 /* Home Body Style */
 
-.home-body-container {
+.body-container {
   padding-bottom: 40px;
 }
 
-.home-body-container .container {
+.body-container .container {
   padding-top: 40px;
 }
 
-.home-body-first {
+.body-first {
   display: flex;
   justify-content: space-between;
 }
 
-.home-body-first div {
+.body-first div {
   width: 45%;
 }
 
-.home-body-first div img {
+.body-first div img {
   width: 45%;
   background: red;
   display: block;
   margin: 0 auto;
 }
 
-.home-body-first div a {
+.body-first div a {
   text-decoration: none;
 }
 
-.home-body-first div p,
-.home-body-second p {
+.body-first div p,
+.body-second p {
   text-align: center;
   padding: 10px;
-  font-size: 27px;
+  font-size: 22px;
   color: red;
 }
 
-.home-body-second {
+.body-second {
   width: 80%;
   margin: 0 auto;
 }
 
-.home-body-second p {
+.body-second p {
   text-align: center;
   padding: 40px 0px !important;
 }
 
-.home-body-second div {
+.body-second div {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.home-body-second div img {
+.body-second div img {
   width: 10%;
 }
 
@@ -189,7 +189,7 @@ footer .container > div {
 }
 
 .footer-div p {
-  font-size: 27px;
+  font-size: 23px;
   text-align: center;
 }
 
@@ -212,7 +212,7 @@ footer .container > div {
   /* background-color: blue; */
   border: 2px solid #000;
   padding: 20px;
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -354,6 +354,68 @@ footer .container > div {
   .japanImage img {
     height: 350px;
   }
+
+  .home-intro {
+    width: 100%;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #111;
+  }
+
+  .home-intro h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .logo {
+    width: 40%;
+    background-color: skyblue;
+    display: inline-block;
+    position: relative;
+    top: 35px;
+  }
+
+  .body-first div p,
+  .body-second p {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: red;
+  }
+
+  footer {
+    background: #f6ff00;
+    width: 100%;
+    padding: 40px;
+  }
+
+  .footer-div {
+    width: 30%;
+    padding: 25px 0px;
+    background: #999;
+    border-radius: 7px;
+  }
+
+  .footer-div p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .body-second {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .home-container {
+    width: 100%;
+    height: 400px;
+    background-color: skyblue;
+    padding-top: 60px;
+    padding-bottom: 28px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -424,9 +486,91 @@ footer .container > div {
 }
 
 @media (max-width: 500px) {
+  .home-intro h2 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .home-intro {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #111;
+  }
+
+  .home-container {
+    width: 100%;
+    height: 350px;
+    background-color: skyblue;
+    padding-top: 60px px;
+    padding-bottom: 28px;
+  }
+
+  .body-container .container {
+    padding-top: 20px;
+  }
+
+  .body-first {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .body-first div {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .body-first div img {
+    width: 50%;
+    background: red;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .body-first div p {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: red;
+  }
+
+  .body-second p {
+    text-align: center;
+    padding: 15px 0px !important;
+  }
+
+  .body-container {
+    padding-bottom: 25px;
+  }
+
+  .body-second {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .footer-div {
+    width: 30%;
+    padding: 20px 0px;
+    background: #999;
+    border-radius: 7px;
+  }
+
+  .footer-div p {
+    font-size: 13px;
+    text-align: center;
+  }
+
   .tochigiContainer h1 {
     font-size: 22px;
     margin-top: 15px;
+  }
+
+  .body-second div img {
+    width: 13%;
   }
 
   .map {
@@ -521,8 +665,45 @@ footer .container > div {
     /* background-color: sienna; */
     font-size: 20px;
     margin-top: 15px;
+  }
+
+  .home-intro h2 {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .body-first div p {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: red;
+  }
+
+  .home-container {
+    width: 100%;
+    height: 220px;
+    background-color: skyblue;
+    padding-top: 60px px;
+    padding-bottom: 0px;
 }
 
+  .home-intro {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #111;
+  }
+
+  .logo {
+    width: 40%;
+    background-color: skyblue;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+  }
 }
 
 @media (max-width: 300px) {
