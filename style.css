@@ -956,6 +956,13 @@ input[type="submit"]:hover {
   margin: 0 auto;
 }
 
+.contactContainer .contactList img {
+  margin-top: 40px;
+  border: 1px solid #000;
+  margin-bottom: 40px;
+}
+
+
 }
 
 @media (max-width: 400px) {
