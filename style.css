@@ -247,6 +247,51 @@ footer .container > div {
   height: 100%;
 }
 
+/* japan CSS */
+
+.japanContainer p {
+  /* background-color: sienna; */
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+.japanContainer span {
+  /* background-color: slategrey; */
+  font-size: 22px;
+}
+.japanParagraph {
+  /* background-color: seashell; */
+  margin: 15px 0px;
+}
+
+.japanContainer h4 {
+  /* background-color: blue; */
+  border: 2px solid #000;
+  width: 90%;
+  margin: 0 auto;
+  height: 250px;
+  text-align: center;
+  padding: 100px 0;
+  font-size: 25px;
+}
+
+.japanImage {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.japanImage > div {
+  width: 35%;
+  border: 1px solid;
+  height: 400px;
+  margin: 12px 0px;
+}
+
+.japanImage img{
+  height: 400px;
+}
+
 @media (max-width: 900px) {
   .map {
     background: url("images/map_jp.png") no-repeat center;
@@ -275,7 +320,7 @@ footer .container > div {
   .paragraph li {
     font-size: 13px;
     padding: 2px;
-}
+  }
 }
 
 @media (max-width: 600px) {
