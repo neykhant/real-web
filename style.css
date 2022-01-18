@@ -301,11 +301,20 @@ footer .container > div {
   height: 400px;
 }
 
+@media (max-width: 1000px) {
+  .logo {
+    width: 40%;
+    background-color: skyblue;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+  }
+}
+
 @media (max-width: 920px) {
   .nav-container {
     display: none;
   }
-  
 
   .home-intro {
     width: 100%;
@@ -335,7 +344,7 @@ footer .container > div {
     display: inline-block;
     position: relative;
     top: 15px;
-}
+  }
 }
 
 @media (max-width: 900px) {
