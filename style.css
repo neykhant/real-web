@@ -271,6 +271,11 @@ footer .container > div {
     background-size: contain;
     width: 100%;
   }
+
+  .paragraph li {
+    font-size: 13px;
+    padding: 2px;
+}
 }
 
 @media (max-width: 600px) {
@@ -308,7 +313,7 @@ footer .container > div {
 
   .map {
     background: url(images/map_jp.png) no-repeat center;
-    height: 220px;
+    height: 210px;
     background-size: contain;
     width: 100%;
     margin: 0 auto;
