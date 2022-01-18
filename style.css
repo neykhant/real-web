@@ -492,12 +492,13 @@ footer .container > div {
 
   .japanContainer h4 {
     /* background-color: blue; */
+    /* background-color: blue; */
     border: 2px solid #000;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-    height: 175px;
+    height: 160px;
     text-align: center;
-    padding: 75px 0;
+    padding: 65px 0;
     font-size: 18px;
   }
 
@@ -582,24 +583,23 @@ footer .container > div {
     text-align: center;
     padding: 50px 0;
     font-size: 16px;
-}
+  }
 
-.japanContainer span {
-  /* background-color: slategrey; */
-  font-size: 15px;
-}
+  .japanContainer span {
+    /* background-color: slategrey; */
+    font-size: 15px;
+  }
 
-.japanImage > div {
-  width: 70%;
-  border: 1px solid;
-  height: 334px;
-  margin: 12px auto;
-}
+  .japanImage > div {
+    width: 70%;
+    border: 1px solid;
+    height: 334px;
+    margin: 12px auto;
+  }
 
-.japanImage img {
-  height: 330px;
-}
-
+  .japanImage img {
+    height: 330px;
+  }
 }
 
 @media (max-width: 350px) {
