@@ -63,8 +63,17 @@ li.nav-item {
 
 li.nav-item a:hover {
   color: #39b54a;
-  border-bottom: 2px solid #39b54a;
+  border-bottom: 1px solid #39b54a;
   padding-bottom: 5px;
+}
+
+.active {
+  color: #39b54a;
+    border-bottom: 2px solid #39b54a;
+    padding-bottom: 5px;
+    /* padding-left: 62px; */
+    /* background-color: red; */
+    padding-right: 40px;
 }
 
 /* Home Banner CSS */
@@ -290,6 +299,12 @@ footer .container > div {
 
 .japanImage img {
   height: 400px;
+}
+
+@media (max-width: 920px) {
+  .nav-container {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
