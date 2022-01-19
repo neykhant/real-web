@@ -349,7 +349,6 @@ ul.paragraph li {
 /* Contact CSS */
 
 input[type="text"],
-email,
 select,
 textarea {
   width: 100%;
@@ -360,11 +359,22 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  outline: none;
 }
 
-input[type="email"],
-select,
-textarea {
+input[type="text"]:focus {
+  border: 2px solid green; 
+}
+
+input[type="email"]:focus {
+  border: 2px solid green; 
+}
+
+textarea:focus {
+  border: 2px solid green; 
+}
+
+input[type="email"]{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -373,6 +383,7 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  outline: none;
 }
 
 input[type="submit"] {
@@ -402,7 +413,7 @@ input[type="submit"]:hover {
   width: 30%;
   /* background-color: red; */
   margin-top: 20px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .contactList {
@@ -411,12 +422,13 @@ input[type="submit"]:hover {
   width: 100%;
 }
 .contactContainer .contactList img{
-  margin-top: 30px;
-  border: 1px solid #000;
+  margin-top: 50px;
+  border: 1px solid #ccc;
 }
 
 .contactContainer h3 {
   margin: 10px;
+  font-size: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -551,9 +563,14 @@ input[type="submit"]:hover {
     top: 12px;
   }
 
+  .contactContainer h3 {
+    margin: 25px 0 10px 0;
+    font-size: 30px;
+}
+
   .contactContainer .contactList img {
-    margin-top: 36px;
-    border: 1px solid #000;
+    margin-top: 65px;
+    border: 1px solid #ccc;
 }
 
   .contactList > div {
@@ -751,10 +768,14 @@ input[type="submit"]:hover {
   .japanImage img {
     height: 377px;
   }
+  .contactContainer h3 {
+    margin: 25px 0 10px 0;
+    font-size: 25px;
+}
 
   .contactContainer .contactList img {
-    margin-top: 40px;
-    border: 1px solid #000;
+    margin-top: 65px;
+    border: 1px solid #ccc;
 }
 
   .contactList > div {
@@ -958,7 +979,7 @@ input[type="submit"]:hover {
 
 .contactContainer .contactList img {
   margin-top: 40px;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   margin-bottom: 40px;
 }
 
