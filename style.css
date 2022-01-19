@@ -755,6 +755,15 @@ input[type="submit"]:hover {
     margin: 20px auto;
   }
 
+  .japanContainer p {
+    /* background-color: sienna; */
+    font-size: 23px;
+}
+.japanContainer span {
+  /* background-color: slategrey; */
+  font-size: 20px;
+}
+
 }
 
 @media (max-width: 800px){
@@ -811,13 +820,13 @@ input[type="submit"]:hover {
 
   .japanContainer p {
     /* background-color: sienna; */
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 23px;
   }
 
   .japanContainer span {
     /* background-color: slategrey; */
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .japanImage > div {
@@ -951,13 +960,13 @@ input[type="submit"]:hover {
 
   .japanContainer p {
     /* background-color: sienna; */
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 23px;
   }
 
   .japanContainer span {
     /* background-color: slategrey; */
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .japanImage > div {
@@ -1169,7 +1178,7 @@ input[type="submit"]:hover {
 
   .japanContainer p {
     /* background-color: sienna; */
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 20px;
   }
 
@@ -1187,7 +1196,7 @@ input[type="submit"]:hover {
 
   .japanContainer span {
     /* background-color: slategrey; */
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .contactList {
@@ -1252,9 +1261,14 @@ input[type="submit"]:hover {
 
   .japanContainer p {
     /* background-color: sienna; */
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 15px;
   }
+
+  .japanContainer span {
+    /* background-color: slategrey; */
+    font-size: 14px;
+}
 
   .home-intro h2 {
     font-size: 15px;
@@ -1371,7 +1385,7 @@ input[type="submit"]:hover {
 
   .japanContainer p {
     /* background-color: sienna; */
-    font-size: 18px;
+    font-size: 13px;
     margin-top: 15px;
   }
 
