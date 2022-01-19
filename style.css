@@ -40,7 +40,7 @@ body {
   padding: 30px 0px;
 }
 
-.nav-container h3 {
+.nav-container h4 {
   font-size: 30px;
 }
 
@@ -54,11 +54,15 @@ li.nav-item a {
   color: #000;
   font-style: normal;
   font-family: arial;
-  font-size: 18px;
+  font-size: 16px;
+  /* background-color: blue; */
+  margin-right: 10px;
+  padding: 10px;
 }
 
 li.nav-item {
-  padding-left: 40px;
+  padding-left: 0px;
+  /* background-color: red; */
 }
 
 li.nav-item a:hover {
@@ -67,11 +71,15 @@ li.nav-item a:hover {
   padding-bottom: 5px; */
 }
 
+/* li.nav-item a:visited{
+  background-color: green;
+} */
+
 .activeD {
   color: #39b54a;
   border-bottom: 2px solid #39b54a;
-  padding-bottom: 5px;
-  padding-right: 40px;
+  padding-bottom: 10px;
+  /* padding-right: 40px; */
 }
 
 /* Home Banner CSS */
@@ -202,7 +210,7 @@ footer .container > div {
 
 /* tochigi guide CSS */
 
-.tochigiContainer h1 {
+.tochigiContainer .headTochigi {
   /* background-color: green; */
   font-size: 30px;
   margin-top: 20px;
@@ -211,7 +219,7 @@ footer .container > div {
 
 .map {
   background: url("images/map_jp.png") no-repeat center;
-  height: 500px;
+  height: 450px;
   background-size: contain;
   width: 100%;
 }
@@ -239,7 +247,7 @@ ul.paragraph li {
 
 .tochigiImageList P {
   margin: 5px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .tochigiImagerow {
@@ -255,7 +263,7 @@ ul.paragraph li {
 }
 
 .tochigiImagerow label {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .tochigiImagerow img {
@@ -299,13 +307,14 @@ ul.paragraph li {
 
 .japanImage > div {
   width: 30%;
-  border: 1px solid;
-  height: 380px;
-  margin: 12px 0px;
+  /* border: 1px solid; */
+  /* height: 380px; */
+  margin: 30px 0px;
 }
 
 .japanImage img {
-  height: 377px;
+  /* height: 377px; */
+  border: 1px solid #ccc;
 }
 
 /* for mobile navbar */
@@ -352,35 +361,35 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
+  margin-top: 8px;
   margin-bottom: 16px;
   resize: vertical;
   outline: none;
 }
 
 input[type="text"]:focus {
-  border: 2px solid green; 
+  border: 2px solid green;
 }
 
 input[type="email"]:focus {
-  border: 2px solid green; 
+  border: 2px solid green;
 }
 
 textarea:focus {
-  border: 2px solid green; 
+  border: 2px solid green;
 }
 
-input[type="email"]{
+input[type="email"] {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  margin-top: 6px;
+  margin-top: 8px;
   margin-bottom: 16px;
   resize: vertical;
   outline: none;
@@ -393,6 +402,7 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
 }
 
 input[type="submit"]:hover {
@@ -401,7 +411,7 @@ input[type="submit"]:hover {
 
 .containerForm {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   padding: 20px;
 }
 
@@ -409,26 +419,97 @@ input[type="submit"]:hover {
   display: flex;
 }
 
-.contactList > div {
-  width: 30%;
-  /* background-color: red; */
+/* .contactList > div {
+  width: 100%;
+  margin-top: 20px;
+  margin: 20px auto;
+} */
+
+.contactList .contactFormImage {
+  width: 100%;
   margin-top: 20px;
   margin: 20px auto;
 }
 
-.contactList {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.contactContainer .contactList img{
-  margin-top: 50px;
-  border: 1px solid #ccc;
+.contactList .contactFormList {
+  width: 50%;
+  margin: 0 auto;
 }
 
-.contactContainer h3 {
+.contactFormImage {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* .bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+} */
+
+.top-left-contact_us {
+  position: absolute;
+  top: 8px;
+  left: 80px;
+  font-size: 28px !important;
+  margin: 10px 0 0 0;
+}
+
+.top-left-phone {
+  position: absolute;
+  top: 68px;
+  left: 16px;
+}
+
+.top-left-email {
+  position: absolute;
+  top: 108px;
+  left: 16px;
+}
+.top-left-address {
+  position: absolute;
+  top: 150px;
+  left: 16px;
+}
+
+/* .top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.contactFormImage img {
+  border-radius: 3px;
+}
+
+.contactList {
+  width: 100%;
+}
+
+/* .contactContainer .contactList img{
+  margin-top: 50px;
+  border: 1px solid #ccc;
+} */
+
+.contactContainer p {
   margin: 10px;
-  font-size: 30px;
+  font-size: 28px;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {
@@ -436,9 +517,9 @@ input[type="submit"]:hover {
     /* background-color: blue; */
     border: 1px solid #000;
     padding: 20px;
-    width: 55%;
+    width: 45%;
     margin: 0 auto;
-    /* font-size: 18px; */
+    font-size: 18px;
   }
 }
 
@@ -516,6 +597,31 @@ input[type="submit"]:hover {
   }
 }
 
+@media (max-width: 800px){
+  .top-left-contact_us{
+    display: none;
+  }
+
+  .top-left-phone {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+}
+
+.top-left-email {
+  position: absolute;
+  top: 48px;
+  left: 16px;
+}
+
+.top-left-address {
+  position: absolute;
+  top: 88px;
+  left: 16px;
+}
+
+}
+
 @media (max-width: 900px) {
   .map {
     background: url("images/map_jp.png") no-repeat center;
@@ -528,9 +634,9 @@ input[type="submit"]:hover {
     /* background-color: blue; */
     border: 1px solid #000;
     padding: 20px;
-    width: 55%;
+    width: 50%;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .home-intro {
@@ -541,6 +647,7 @@ input[type="submit"]:hover {
     align-items: center;
     border: 1px solid #111;
   }
+
   .home-container {
     width: 100%;
     height: 450px;
@@ -563,22 +670,28 @@ input[type="submit"]:hover {
     top: 12px;
   }
 
-  .contactContainer h3 {
+  .contactContainer p {
     margin: 25px 0 10px 0;
-    font-size: 30px;
-}
+    font-size: 27px;
+  }
 
-  .contactContainer .contactList img {
+  /* .contactContainer .contactList img {
     margin-top: 65px;
     border: 1px solid #ccc;
-}
+} */
 
-  .contactList > div {
+  /* .contactList > div {
     width: 40%;
-    /* background-color: red; */
     margin-top: 20px;
     margin: 0 auto;
-}
+  } */
+
+  .contactList .contactFormImage {
+    width: 100%;
+    margin-top: 20px;
+    margin: 20px auto;
+  }
+
 }
 
 @media (max-width: 700px) {
@@ -596,7 +709,7 @@ input[type="submit"]:hover {
 
   .paragraph {
     /* background-color: blue; */
-    border: 2px solid #000;
+    border: 1px solid #000;
     padding: 20px;
     width: 55%;
     margin: 0 auto;
@@ -631,13 +744,13 @@ input[type="submit"]:hover {
 
   .japanImage > div {
     width: 30%;
-    border: 1px solid;
-    height: 280px;
-    margin: 12px 0px;
+    /* border: 1px solid; */
+    /* height: 280px; */
+    margin: 20px 0px;
   }
 
   .japanImage img {
-    height: 275px;
+    /* height: 275px; */
   }
 
   .home-intro {
@@ -701,11 +814,16 @@ input[type="submit"]:hover {
     padding-top: 60px;
     padding-bottom: 28px;
   }
+
+  .contactList .contactFormList{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 600px) {
-  .tochigiContainer h1 {
-    font-size: 25px;
+  .tochigiContainer .headTochigi {
+    font-size: 23px;
     margin-top: 15px;
   }
 
@@ -760,30 +878,55 @@ input[type="submit"]:hover {
 
   .japanImage > div {
     width: 70%;
-    border: 1px solid;
-    height: 380px;
-    margin: 12px auto;
+    /* border: 1px solid; */
+    /* height: 380px; */
+    margin: 20px auto;
   }
 
   .japanImage img {
-    height: 377px;
+    /* height: 377px; */
   }
-  .contactContainer h3 {
+  .contactContainer p {
     margin: 25px 0 10px 0;
-    font-size: 25px;
-}
+    font-size: 22px;
+  }
 
-  .contactContainer .contactList img {
+  /* .contactContainer .contactList img {
     margin-top: 65px;
     border: 1px solid #ccc;
-}
+} */
 
-  .contactList > div {
+  /* .contactList > div {
     width: 47%;
-    /* background-color: red; */
     margin-top: 20px;
     margin: 0 auto;
-}
+  } */
+
+  .contactList .contactFormImage {
+    width: 100%;
+    margin-top: 20px;
+    margin: 20px auto;
+  }
+
+  .top-left-contact_us{
+    display: none;
+  }
+
+  .top-left-phone{
+    display: none;
+  }
+  .top-left-email{
+    display: none;
+  }
+
+  .top-left-address{
+    display: none;
+  }
+
+  .contactList .contactFormList{
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -865,8 +1008,8 @@ input[type="submit"]:hover {
     text-align: center;
   }
 
-  .tochigiContainer h1 {
-    font-size: 22px;
+  .tochigiContainer .headTochigi {
+    font-size: 18px;
     margin-top: 15px;
   }
 
@@ -909,7 +1052,7 @@ input[type="submit"]:hover {
 
   .paragraph {
     /* background-color: blue; */
-    border: 2px solid #000;
+    border: 1px solid #000;
     padding: 10px;
     width: 68%;
     margin: 0 auto;
@@ -931,13 +1074,13 @@ input[type="submit"]:hover {
 
   .japanImage > div {
     width: 65%;
-    border: 1px solid;
-    height: 300px;
-    margin: 12px auto;
+    /* border: 1px solid; */
+    /* height: 300px; */
+    margin: 20px auto;
   }
 
   .japanImage img {
-    height: 296px;
+    /* height: 296px; */
   }
 
   .japanContainer p {
@@ -968,22 +1111,30 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
     width: 100%;
     flex-direction: column;
+  }
+
+  /* .contactList > div {
+    width: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+  } */
+
+  .contactList .contactFormImage {
+    width: 100%;
+    margin-top: 20px;
+    margin: 20px auto;
+  }
+
+  .contactContainer p {
+    margin: 0px 0 0px 0;
+    font-size: 20px;
 }
 
-.contactList > div {
-  width: 100%;
-  /* background-color: red; */
-  margin-top: 20px;
-  margin: 0 auto;
-}
-
-.contactContainer .contactList img {
+  /* .contactContainer .contactList img {
   margin-top: 40px;
   border: 1px solid #ccc;
   margin-bottom: 40px;
-}
-
-
+} */
 }
 
 @media (max-width: 400px) {
@@ -997,7 +1148,7 @@ input[type="submit"]:hover {
 
   .paragraph {
     /* background-color: blue; */
-    border: 2px solid #000;
+    border: 1px solid #000;
     padding: 10px;
     width: 70%;
     margin: 0 auto;
@@ -1067,10 +1218,18 @@ input[type="submit"]:hover {
     position: relative;
     top: 5px;
   }
+  .tochigiImagerow > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .tochigiImagerow {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 300px) {
-  .tochigiContainer h1 {
+  .tochigiContainer .headTochigi {
     font-size: 15px;
     margin-top: 10px;
   }
@@ -1143,13 +1302,13 @@ input[type="submit"]:hover {
 
   .japanImage > div {
     width: 70%;
-    border: 1px solid;
-    height: 334px;
-    margin: 12px auto;
+    /* border: 1px solid; */
+    /* height: 334px; */
+    margin: 20px auto;
   }
 
   .japanImage img {
-    height: 330px;
+    /* height: 330px; */
   }
 }
 
