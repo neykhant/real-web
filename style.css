@@ -144,7 +144,7 @@ li.nav-item a:hover {
 .headerKaigo {
   position: absolute;
   top: 18%;
-  left: 14%;
+  left: 18%;
   font-size: 30px;
 }
 
@@ -323,6 +323,25 @@ ul.paragraph li {
   /* background-color: seashell; */
   /* margin: 15px 0px; */
   margin: 15px 20px;
+}
+
+.japanProfile{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* height: 200px; */
+  align-items: center;
+}
+
+.japanProfile > div{
+  width: 40%;
+  /* background-color: red; */
+}
+
+.japanProfile img{
+  height: 200px;
+  width:100%;
 }
 
 .japanContainer h4 {
@@ -909,6 +928,22 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 600px) {
+  .japanProfile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* height: 200px; */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.japanProfile > div {
+  width: 80%;
+  /* background-color: red; */
+  text-align: center;
+}
+
   .headerKaigo {
     position: absolute;
     font-size: 16px;
