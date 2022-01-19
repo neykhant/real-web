@@ -332,6 +332,7 @@ ul.paragraph li {
   justify-content: center;
   /* height: 200px; */
   align-items: center;
+  margin: 15px;
 }
 
 .japanProfile > div{
@@ -936,6 +937,7 @@ input[type="submit"]:hover {
     /* height: 200px; */
     align-items: center;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .japanProfile > div {
