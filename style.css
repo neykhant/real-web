@@ -136,7 +136,7 @@ li.nav-item a:hover {
   text-align: center;
   color: white;
   font-size: 20px;
-  display: flex;
+  /* display: flex; */
   flex-direction: row-reverse;
   flex-wrap: wrap;
 }
@@ -154,10 +154,12 @@ li.nav-item a:hover {
   /* background-color: red; */
 }
 
-/* .headerLogo{
-  display: flex;
-  flex-direction: row-reverse;
-} */
+.headerLogo img{
+  position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 50%;
+}
 
 
 
@@ -165,6 +167,7 @@ li.nav-item a:hover {
 
 .body-container {
   padding-bottom: 40px;
+  margin-top: 80px;
 }
 
 .body-container .container {
@@ -796,6 +799,9 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 700px) {
+  .body-container{
+    margin-top: 40px;
+  }
   .headerKaigo {
     position: absolute;
     /* top: 18%;
