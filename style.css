@@ -171,7 +171,7 @@ li.nav-item a:hover {
 }
 
 .body-container .container {
-  padding-top: 40px;
+  padding-top: 100px;
 }
 
 .body-first {
@@ -398,7 +398,7 @@ ul.paragraph li {
   background-color: darkcyan;
   margin: 0;
   padding: 0;
-  width: 70px;
+  width: 55px;
   }
 
 .topnav a {
@@ -593,6 +593,9 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 1200px) {
+  .body-container .container{
+    padding-top: 70px;
+  }
   .paragraph {
     /* background-color: blue; */
     border: 1px solid #000;
@@ -703,6 +706,10 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 900px) {
+  .body-container .container{
+    padding-top: 50px;
+  }
+
   .headerKaigo {
     position: absolute;
     /* top: 18%;
